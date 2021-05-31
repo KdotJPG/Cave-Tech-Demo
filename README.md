@@ -8,7 +8,7 @@ Then run `gradlew runClient` in the main directory.
 ### Derivative Tunnel Closing Cave Generator
 
 Computes the sum of squares of two seeds of OpenSimplex2 noise to produce smooth and roughly round tunnels.
-Uses the cave's derivative vectors to check when caves are becoming less round and too distorted, to close off those
+Uses the noise derivative vectors to check when caves are becoming less round and too distorted, to close off those
 areas and turn them into dead ends. This addresses two potential stylistic blockers of noise tunnels at the same time.
 Uses a cached column noise generator and a form of conditional noise layer skipping to enable fast generation.
 
@@ -20,7 +20,7 @@ Uses a cached column noise generator and a form of conditional noise layer skipp
 
 ### Best Two Of Three Noises Cave Generator
 
-This was a bit of a failed experiment. My goal was to smoothly and dynamically pick the best two of three noises
+This second idea was a bit of a failed experiment. My goal was to smoothly and dynamically pick the best two of three noises
 to carve caves with, but it didn't end up producing caves the way I intended. It's possible I made a math error,
 but it's also possible the idea just doesn't work out as I had hoped. Leaving this in here in case anyone finds
 parts of it useful. Particularly, the smooth weight selection formula might be great for other effects.
