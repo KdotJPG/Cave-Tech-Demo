@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "jpg.k.cavetechdemo.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "CaveCarverMixin",
+    "RavineCarverMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
